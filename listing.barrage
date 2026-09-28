@@ -1,0 +1,43 @@
+# Cerv
+
+> A cloud door that takes a number y, finds an x that factors y, and forwards the payload to Colossus.
+
+## Purpose
+Explain Cerv as a hand-off API, not as a full factoring lecture. Source: fitzyracing1/cerv.
+
+## How it works (plain English)
+1. Someone sends y.
+2. The service looks for an x that factors y.
+3. It forwards every payload to Colossus.
+4. The caller gets the result of that hand-off.
+
+## Key ideas
+- y (the number sent in)
+- x (the factor the service tries to name)
+- Colossus (the next machine that receives the payload)
+
+## The actual code
+```
+# source: fitzyracing1/cerv
+receive y
+find x that factors y
+forward payload to Colossus
+```
+
+## Line-by-line translation
+1. receive y → “take the incoming number”
+2. find x that factors y → “name a factor of that number”
+3. forward payload to Colossus → “send the whole packet onward”
+
+## Decisions the program makes
+- If y arrives → try to name x and always forward
+- If x is not found → still forward the payload with that fact noted
+
+## What a person would notice
+A small door in front of a larger named machine.
+
+## Current status
+Barrage clone.
+
+## Next possible steps
+Open the source API and submit one y.

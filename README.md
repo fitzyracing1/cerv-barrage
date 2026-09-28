@@ -1,2 +1,5 @@
 # cerv-barrage
-Barrage plain-language clone of fitzyracing1/cerv
+
+Barrage clone of [fitzyracing1/cerv](https://github.com/fitzyracing1/cerv).
+
+Read [listing.barrage](listing.barrage).
